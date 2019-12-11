@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="ie=edge" http-equiv="x-ua-compatible"
+    meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"
+
+    link rel="icon" href="/favicon.ico" type="image/x-icon"
+    title= current_page&.data&.title || data&.site&.title
+
+    = stylesheet_link_tag "site"
+  body
+    = yield
