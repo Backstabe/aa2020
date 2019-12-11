@@ -1,0 +1,7 @@
+kind: pipeline
+name: build 
+
+steps:
+  - name: build-step 
+    image: ruby:2.6.5-alpine3.10
+
