@@ -3,5 +3,24 @@ name: build
 
 steps:
   - name: build-step 
-    image: ruby:2.6.5-alpine3.10
-
+    image: ruby:2.6.5
+    environment:
+      DEPLOY_HOST:
+        from_secret: DEPLOY_HOST
+      DEPLOY_PASSWORD:
+        from_secret: DEPLOY_PASSWORD
+      DEPLOY_PATH:
+        from_secret: DEPLOY_PATH
+      DEPLOY_USER:
+       from_secret: DEPLOY_USER
+    commands:
+      - apt-get update -qq 
+      - apt-get install -y nodejs
+      - gem install bundler
+      - bundle
+      - bundle exec middleman deploy --build-before
+trigger:
+  branch:
+  - master
+  event:
+  - push

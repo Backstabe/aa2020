@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  app:
+    build: .
+    env_file: .env
+    volumes:
+      - ./:/app
+    ports:
+      - 4567:4567
