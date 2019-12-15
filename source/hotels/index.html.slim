@@ -1,0 +1,12 @@
+---
+title: Отели 
+---
+
+section#hotels
+  .container
+    .row
+      .col-full
+        - data.hotels.hotels.each do |h|
+            p = h.name
+            p = h.link
+            hr

@@ -7,6 +7,7 @@ end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
+activate :directory_indexes
 
 # Per-page layout changes
 page '/*.xml', layout: false
