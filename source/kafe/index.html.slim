@@ -2,8 +2,12 @@
 title: Кафе 
 ---
 
-- data.cafe.cafe.each do |c|
-    p = c.name
-    p = c.address
-    p = c.price
-    hr
+section#cafe
+  .container
+    .row
+      .col-full
+        - data.cafe.cafe.each do |c|
+            p = c.name
+            p = c.address
+            p = c.price
+            hr

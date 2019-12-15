@@ -2,15 +2,38 @@
 title: "Семинар АА 1-4 мая 2020 г. г.Санкт-Петербург Спикер: Майк Л. Переводчик: Григорий Т."
 ---
 
-h1 РАБОЧИЙ ЦЕХ АА
-h2 1-4 мая 2020 г.
-h3 Санкт-Петербург
+section#intro.intro.intro-bg
+  .container
+    .row
+      .col-half
+        h1 Рабочий цех АА
+        h2 1-4 мая 2020 г.
+        h3 г. Санкт-Петербург
 
-p Спикер: Майк Л. (35 лет трезвости)
-p Переводчик: Григорий Т.
+        div
+          = link_to "Регистрация", "/registraciya/", class: "btn-intro"
+      .col-half
+        img src="/images/rc.svg"
 
-h4 Темы:
+section#speaker.speaker
+  .container
+    .row
+      .col-half.align-center
+        .speaker-img
+          img src="/images/speaker.svg"
+      .col-half
+        h2 Спикер
+        h3 Майк Л. (35 лет трезвости)
+        h2 Переводчик 
+        h3 Григорий Т.
 
-ul
- li Большая Книга (12 шагов)
- li Традиции в семье и в жизни
+section#themes.themes.section-bg
+  .container
+    .row
+      .col-full
+        h4 Темы
+        ul
+          li Большая Книга (12 шагов)
+          li Традиции в семье и в жизни
+
+= partial 'shared/registration'
