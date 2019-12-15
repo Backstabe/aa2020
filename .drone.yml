@@ -13,6 +13,7 @@ steps:
         from_secret: DEPLOY_PATH
       DEPLOY_USER:
        from_secret: DEPLOY_USER
+      LANG: C.UTF-8
     commands:
       - apt-get update -qq 
       - apt-get install -y nodejs
