@@ -47,6 +47,11 @@ configure :build do
   activate :minify_javascript
 end
 
+config[:js_map] = "https://api-maps.yandex.ru/services/constructor/1.0/js/"+
+ "?um=constructor%3A73b11a95af5e3ca0d0688155a3d52f1ae7c823bed5a960907c982628f8c3703d"+
+ "&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"
+
+config[:phone] = '+7 (921) 931-26-17'
 
 activate :deploy do |deploy|
   deploy.deploy_method   = :ftp
