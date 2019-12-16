@@ -1,0 +1,15 @@
+section#place.place.place-bg
+  .container
+    .row
+      .col-full
+        h2 Место проведения
+
+        p.info-p Дом еврейской культуры ЕСОД
+        = link_to "Информация", "https://yandex.ru/profile/222823848109", target: "_blank"
+        p
+          | Санкт-Петербург, 197110
+          br
+          | Большая Разночинная ул., 25
+    .row
+      .col-full
+        script type="text/javascript" charset="utf-8" async=true src=config[:js_map]
