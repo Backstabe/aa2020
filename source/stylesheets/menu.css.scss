@@ -1,0 +1,146 @@
+@import 'variables';
+
+.header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  &::before {
+    background-color: $base-color;
+    box-shadow: 0 0 30px rgba(127,137,161,.3);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  &__body {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__logo {
+    z-index: 5;
+    a {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $dark-font-color;
+      text-decoration: none;
+    }
+  }
+  &__burger {
+    display: none;
+    &.active {
+      span {
+        transform: scale(0);
+      }
+      &:after {
+        bottom: 9px;
+        transform: rotate(-45deg);
+        transition: all .3s ease 0s;
+      }
+      &:before {
+        top: 9px;
+        transform: rotate(45deg);
+        transition: all .3s ease 0s;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    position: relative;
+    z-index: 3;
+    li {
+      margin-left: 20px;
+    }
+  }
+  &__link {
+    display: block;
+    color: $dark-font-color;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: open sans,sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .main {
+    padding-top: 50px!important;
+  }
+  .header {
+    &__body {
+      height: 50px;
+    }
+    &__menu {
+      background: rgba(40,38,70,.8);
+      height: 100%;
+      left: 0;
+      overflow: auto;
+      padding: 50px 10px 0 0;
+      position: fixed;
+      top: -100%;
+      transition: all .3s ease 0s;
+      width: 100%;
+      &.active {
+        top: 0;
+      }
+    }
+    &__burger {
+      display: block;
+      height: 20px;
+      position: relative;
+      width: 30px;
+      z-index: 3;
+      span {
+        background-color: $dark-font-color;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: 9px;
+        width: 100%;
+      }
+      &:before,
+      &:after {
+        background-color: $dark-font-color;
+        content: '';
+        height: 2px;
+        position: absolute;
+        width: 100%;
+      }
+      &:after {
+        bottom: 0;
+      }
+      &:before {
+        top: 0;
+      }
+    }
+    &__list {
+      display: block;
+      li {
+        font-size: 24px;
+        margin: 0 0 20px;
+        a {
+          color: $base-color;
+        }
+      }
+    }
+  }
+}
+
