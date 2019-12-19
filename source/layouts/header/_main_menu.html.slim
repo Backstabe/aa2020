@@ -1,8 +1,21 @@
-header#header.header-scrolled
+/ header#header.header-scrolled
+/   .container
+/ 		.logo= link_to "Рабочий цех АА", '/'
+/ 		nav.main-nav.float-right
+/ 			ul
+/ 				li= link_to('Регистрация', '/registraciya/')
+/ 				li= link_to('Кафе', '/kafe/')
+/ 				li= link_to('Отели', '/hotels/')
+
+header.header
   .container
-		.logo= link_to "Рабочий цех АА", '/'
-		nav.main-nav.float-right
-			ul
-				li= link_to('Регистрация', '/registraciya/')
-				li= link_to('Кафе', '/kafe/')
-				li= link_to('Отели', '/hotels/')
+    .header__body
+      .header__logo= link_to "Рабочий цех АА", '/'
+      .header__burger
+        span
+      nav.header__menu
+        ul.header__list
+          li= link_to('Регистрация', '/registraciya/', class: 'header__link')
+          li= link_to('Кафе', '/kafe/', class: 'header__link')
+          li= link_to('Отели', '/hotels/', class: 'header__link')
+
