@@ -26,16 +26,9 @@
   }
   &__logo {
     z-index: 5;
-    a {
-      font-size: 36px;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-      font-weight: 400;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: $dark-font-color;
-      text-decoration: none;
+    img {
+      width: 135px;
+      height: 35px;
     }
   }
   &__burger {

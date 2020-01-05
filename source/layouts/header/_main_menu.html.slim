@@ -1,16 +1,9 @@
-/ header#header.header-scrolled
-/   .container
-/ 		.logo= link_to "Рабочий цех АА", '/'
-/ 		nav.main-nav.float-right
-/ 			ul
-/ 				li= link_to('Регистрация', '/registraciya/')
-/ 				li= link_to('Кафе', '/kafe/')
-/ 				li= link_to('Отели', '/hotels/')
-
 header.header
   .container
     .header__body
-      .header__logo= link_to "Рабочий цех АА", '/'
+      .header__logo
+        = link_to '/' do
+          img src="/images/logo.svg"
       .header__burger
         span
       nav.header__menu
