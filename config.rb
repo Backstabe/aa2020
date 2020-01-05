@@ -17,6 +17,7 @@ page '/*.txt', layout: false
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 set :slim, format: :html
+set :fonts_dir,  'fonts'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/

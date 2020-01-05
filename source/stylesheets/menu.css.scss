@@ -60,13 +60,38 @@
   }
   &__link {
     display: block;
-    color: $dark-font-color;
     padding: 10px 15px;
-    font-size: 14px;
-    font-family: open sans,sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+    @include font-light;
+    line-height: 40px;
+    color: $dark;
     text-decoration: none;
+    &:hover {
+      color: $second-base-color;
+    }
+  }
+  &__phone {
+    z-index: 5;
+    .phone {
+      &__number {
+        @include font-bold;
+        color: $second-base-color;
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/images/phone.svg');
+          width: 20px;
+          height: 20px;
+          float: left;
+          margin: 0 6px 0 0;
+        }
+      }
+      &__description {
+        @include font-bold;
+        text-transform: uppercase;
+        font-size: 9px;
+        letter-spacing: 0.1em;
+      }
+    }
   }
 }
 
@@ -80,9 +105,6 @@
   .header {
     &__body {
       height: 50px;
-    }
-    &__logo a {
-      font-size: 15px;
     }
     &__menu {
       background: rgba(40,38,70,.8);
