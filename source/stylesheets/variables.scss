@@ -1,4 +1,6 @@
 $base-color: #fff;
+$second-base-color: #25A5CE;
+
 $dark: #000; 
 $first-color: #f5f8fd;
 $second-color: #8582a8; 
@@ -10,4 +12,20 @@ $light-font-color: #696592;
 
 $button-primary-color: #1bb1dc;
 $button-second-color: #0a98c0;
+
+@mixin main-padding {
+  padding: 40px 0;
+}
+
+@mixin font-light {
+  font-family: 'Museo Sans Cyrl 300', sans-serif;
+}
+
+@mixin font-medium {
+  font-family: 'Museo Sans Cyrl 500', sans-serif;
+}
+
+@mixin font-bold {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+}
 
