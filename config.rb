@@ -48,10 +48,8 @@ configure :build do
   activate :minify_javascript
 end
 
-config[:js_map] = "https://api-maps.yandex.ru/services/constructor/1.0/js/"+
-  "?um=constructor%3A917e42e7d2b4a3d6083877d4d9ad1d85d4e04e914e7adcad974a5a5dbc41cfa1"+
-  "&amp;width=100%&amp;height=530&amp;lang=ru_RU&amp;scroll=true"
-
+config[:js_map] = 'constructor%3A917e42e7d2b4a3d6083877d4d9ad1d85d4e04e914e7adcad974a5a5dbc41cfa1'
+config[:js_map_hotels] = 'constructor%3Aa766547fdcfc674e1926669c73b65b162ceef9a2d0e802e28f750a1cf66593f7'
 config[:phone] = '+7 (921) 931-26-17'
 
 activate :deploy do |deploy|

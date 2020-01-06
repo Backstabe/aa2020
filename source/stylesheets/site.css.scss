@@ -29,6 +29,11 @@ strong {
   @include font-bold;
 }
 
+a {
+  text-decoration: none;
+  color: $second-base-color;
+}
+
 .main {
   padding-top: 70px;
 }
@@ -118,10 +123,6 @@ strong {
 .site-section {
   @include font-bold;
   height: 300px;
-  a {
-    text-decoration: none;
-    color: $second-base-color;
-  }
   &__list {
     @include icon;
     margin-bottom: 10px;
@@ -198,3 +199,33 @@ strong {
     @include font-light;
   }
 }
+
+.hotels-wrapper {
+  margin-top: 100px;
+  h1 {
+    margin: 0;
+  }
+  .row {
+    margin-bottom: 45px;
+  }
+  .container {
+    background: url(/images/hotel-page-bg.jpg) no-repeat bottom right;
+  }
+}
+
+.hotel {
+  box-sizing: border-box;
+  padding: 10px;
+  &__name {
+    @include font-bold;
+    font-size: 32px;
+  }
+  &__link {
+    @include icon;
+    margin-top: 15px;
+    &:before {
+      background-image: url('/images/link.svg');
+    }
+  }
+}
+

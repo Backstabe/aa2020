@@ -1,21 +1,21 @@
 hotels:
+  - name: Демократ
+    link: http://www.booking.com/Share-HIpNW4
+  - name: SuperHostel
+    link: http://www.booking.com/Share-s3liF9Y
+  - name: Algen Apartments
+    link: http://www.booking.com/Share-en8ae7
+  - name: Aрт-отель «Карелия»
+    link: http://www.booking.com/Share-l6C3Y8
+  - name: Отель «Эспланада»
+    link: http://www.booking.com/Share-1HkcrSU
   - name: Новосельковский Гостевой Дом
     link: http://www.booking.com/Share-lDst6M
-  - name: РА на Тамбовской 11
-    link:	http://www.booking.com/Share-mKvDAj
-  - name: Отель Эспланада
-    link: http://www.booking.com/Share-1HkcrSU
-  - name: Algen Apartments on Goncharnya
-    link: http://www.booking.com/Share-en8ae7
-  - name: Демократ на Некрасова 58
-    link: http://www.booking.com/Share-HIpNW4
-  - name: Отель Охтинская
+  - name: Отель «Охтинская»
     link: http://www.booking.com/Share-JVXiwzj
-  - name: Мини Отель Александровский
+  - name: Мини-отель «Александровский»
     link: http://www.booking.com/Share-VZYZZJ
   - name: Хостел «338»
     link: http://www.booking.com/Share-2PCWASQ
-  - name: SuperHostel на Каменноостровском 39
-    link: http://www.booking.com/Share-s3liF9Y
-  - name: Aрт Отель Карелия
-    link: http://www.booking.com/Share-l6C3Y8
+  - name: РА
+    link: http://www.booking.com/Share-mKvDAj
