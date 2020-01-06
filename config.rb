@@ -34,11 +34,15 @@ set :fonts_dir,  'fonts'
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def main_nav_link(text, path)
+    classes = [
+      'header__link',
+      ('header__link_current' if current_page.url == path)
+    ].compact.join(' ')
+    link_to(text, path, class: classes)
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

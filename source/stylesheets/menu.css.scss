@@ -65,7 +65,8 @@
     line-height: 40px;
     color: $dark;
     text-decoration: none;
-    &:hover {
+    &:hover,
+    &_current {
       color: $second-base-color;
       transition: all 0.5s;
     }
