@@ -11,6 +11,11 @@ body {
   margin: 0;
 }
 
+h1 {
+  @include font-bold;
+  font-size: 60px;
+}
+
 h2 {
   @include font-bold;
   font-size: 32px;
@@ -18,6 +23,10 @@ h2 {
 
 h3 {
   font-size: 22px;
+}
+
+strong {
+  @include font-bold;
 }
 
 .main {
@@ -75,8 +84,6 @@ h3 {
     background: url(/images/AA.jpg) no-repeat center right;
   }
   h1 {
-    @include font-bold;
-    font-size: 60px;
     margin-bottom: 0px;
     margin-top: 115px;
   }
@@ -94,30 +101,6 @@ h3 {
       color: $base-color;
       background: $second-base-color;
       transition: all 0.5s;
-    }
-  }
-}
-
-.price {
-  .card {
-    background: $base-color;
-    margin: 0 35px;
-    padding: 50px 60px;
-    h3 {
-      font-size: 64px;
-      margin-bottom: 0;
-      color: #535074;
-      font-family: montserrat,sans-serif;
-      font-weight: 400;
-      margin: 0 0 20px;
-      padding: 0;
-      .currency {
-        font-size: 30px;
-      }
-      .period {
-        font-size: 25px;
-        color: $second-color;
-      }
     }
   }
 }
@@ -174,3 +157,44 @@ h3 {
   }
 }
 
+.registration-wrapper {
+  .container {
+    background: url(/images/registration.jpg) no-repeat center right;
+  }
+}
+
+.registration {
+  line-height: 22px;
+  &__item {
+    display: flex;
+  }
+  &__title {
+    min-width: 130px;
+    @include font-bold;
+  }
+}
+
+.price-wrapper {
+  padding-top: 40px;
+}
+
+.price {
+  justify-content: space-between;
+  &__item {
+    flex: 0 0 49%;
+    padding: 40px;
+    color: $base-color;
+    background-color: $second-base-color;
+    box-sizing: border-box;
+  }
+  &__sum {
+    font-size: 32px;
+  }
+  &__example {
+    @include font-bold;
+    padding-top: 20px;
+  }
+  &__priod {
+    @include font-light;
+  }
+}

@@ -2,51 +2,54 @@
 title: Регистрация 
 ---
 
-section#registration-page.section-second
+section.registration-wrapper
   .container
     .row
       .col-full
         h1 Регистрация
-    .row
-      .col-full
-        h3 Счет казначея: 4276 5500 4880 2550
-        h4 Получатель: Иван Юрьевич О.
-    .row
-      .col-full
+    .row.registration
+      .col-half
+        .registration__item
+          .registration__title Счет казначея:
+          .registration__description 4276 5500 4880 2550
+        .registration__item
+          .registration__title Получатель:
+          .registration__description Иван Юрьевич О.
         p Для того, чтобы сделать пожертвование, пожалуйста, укажите в строке «сообщение получателю»:
-        p.info-p В назначении платежа ОБЯЗАТЕЛЬНО напишите слово «ПОЖЕРТВОВАНИЕ»
         ul
-          li Фамилию и первую букву имени жертвователя
-          li Город
-          li Группа АА (если есть домашняя)
-          
-section#price.price.section-bg
+          li фамилию и первую букву имени жертвователя;
+          li город;
+          li группа АА (если есть домашняя);
+          li
+            | в назначении платежа
+            strong<> обязательно
+            | напишите слово
+            strong<> «пожертвование».
+        p
+          | Также можно сделать пожертвование
+          strong< «в фонд новичка».
+
+section.price-wrapper
   .container
-    .row
-      .col-half
-        .card
-          h3
-            | 1500
-            span.currency &#8381;
-            span.period
-              | / до 1 мая
-          h4 Образец
-          p
-            | ПОЖЕРТВОВАНИЕ НА ПРОВЕДЕНИЕ СЕМИНАРА,
-            strong< ПРЕДРЕГИСТРАЦИЯ
+    .row.price
+      .col-half.price__item
+        .price__card
+          .price__sum
+            strong.price__currency 1500 руб.
+            span.price__priod<> | до 1 мая
+          .price__example Образец:
+          p.price__info
+            | Пожертвование на проведение семинара,
+            strong< предрегистрация
             |, Иванов В., г. Тверь, группа АА "Как это видит Билл"
-      .col-half
-        .card
-          h3
-            | 2000
-            span.currency &#8381;
-            span.period 
-              | / c 1 мая
-          h4 Образец
-          p
-            | ПОЖЕРТВОВАНИЕ НА ПРОВЕДЕНИЕ СЕМИНАРА,
-            strong< РЕГИСТРАЦИЯ
+      .col-half.price__item
+        .price__card
+          .price__sum
+            strong.price__currency 2000 руб.
+            span.price__priod<> | c 1 мая
+          .price__example Образец:
+          p.price__info
+            | Пожертвование на проведение семинара,
+            strong< регистрация
             |, Иванов В., г. Тверь, группа АА "Как это видит Билл"
-    .row
-      .col-full
-        p.info-p также можно сделать пожертвование «в фонд новичка».
+
