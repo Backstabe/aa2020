@@ -2,11 +2,28 @@
 title: Отели 
 ---
 
-section#hotels
+- count = 0
+- rows = [3, 3, 2, 2]
+- hotels = data.hotels.hotels
+
+section.hotels-wrapper
+  .container#list
+    - rows.each do |row|
+      .row
+        - if count.zero?
+          .col-quarter
+            h1 Отели
+        - row.times do |i|
+          .col-quarter.hotel
+            .hotel__name= hotels[count].name
+            .hotel__link= link_to 'Забронировать',
+              hotels[count].link, target: '_blank'
+          - count += 1
+
+section#map
   .container
     .row
       .col-full
-        - data.hotels.hotels.each do |h|
-            p = h.name
-            p = h.link
-            hr
+        = partial 'shared/map_script',
+          locals: { um: config[:js_map_hotels], height: 720 }
+

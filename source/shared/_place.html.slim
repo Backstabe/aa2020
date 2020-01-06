@@ -9,4 +9,4 @@ section#place-wrapper.place-wrapper
           p
             | +7 (812) 309-23-00
       .col-three-quarters
-        script type="text/javascript" charset="utf-8" async=true src=config[:js_map]
+        = partial 'shared/map_script', locals: { um: config[:js_map], height: 530 }
