@@ -67,6 +67,7 @@
     text-decoration: none;
     &:hover {
       color: $second-base-color;
+      transition: all 0.5s;
     }
   }
   &__phone {
@@ -74,15 +75,10 @@
     .phone {
       &__number {
         @include font-bold;
+        @include icon;
         color: $second-base-color;
         &:before {
-          content: '';
-          display: block;
           background-image: url('/images/phone.svg');
-          width: 20px;
-          height: 20px;
-          float: left;
-          margin: 0 6px 0 0;
         }
       }
       &__description {
