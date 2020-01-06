@@ -49,8 +49,8 @@ configure :build do
 end
 
 config[:js_map] = "https://api-maps.yandex.ru/services/constructor/1.0/js/"+
- "?um=constructor%3A73b11a95af5e3ca0d0688155a3d52f1ae7c823bed5a960907c982628f8c3703d"+
- "&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"
+  "?um=constructor%3A917e42e7d2b4a3d6083877d4d9ad1d85d4e04e914e7adcad974a5a5dbc41cfa1"+
+  "&amp;width=100%&amp;height=530&amp;lang=ru_RU&amp;scroll=true"
 
 config[:phone] = '+7 (921) 931-26-17'
 

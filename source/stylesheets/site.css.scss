@@ -11,6 +11,15 @@ body {
   margin: 0;
 }
 
+h2 {
+  @include font-bold;
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 .main {
   padding-top: 70px;
 }
@@ -89,22 +98,6 @@ body {
   }
 }
 
-.info-p {
-	color: $light-font-color;
-	font-weight: 400;
-	font-size: 22px;
-	font-style: italic;
-}
-
-.section-bg {
-  @include main-padding;
-  background: $first-color;
-}
-
-.section-second {
-  @include main-padding;
-}
-
 .price {
   .card {
     background: $base-color;
@@ -168,3 +161,16 @@ body {
     background: url(/images/kafe.jpg) no-repeat center right;
 	}
 }
+
+.place-wrapper {
+  margin-top: 30px;
+}
+
+.place {
+  border: 1px solid $second-base-color;
+  box-sizing: border-box;
+  &__info {
+    padding: 0 25px;
+  }
+}
+
