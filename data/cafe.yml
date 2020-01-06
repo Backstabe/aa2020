@@ -1,32 +1,32 @@
 cafe:
-  - name: X 
-    address: Большая разночинная (напротив ЕСОД)
-    price: 150-300 
-  - name: Shigt
-    address: Большая Зеленина ул., 24
-    price: 700-900
-  - name: Буфет
-    address: Большая Зеленина ул., 19
-    price: 250-300
+  - name: КинZа
+    address: Чкаловский пр-т, 8
+    price: 400-1000
   - name: Kлever café
     address: Большая Зеленина ул., 21
     price: 1100-1500
+  - name: Вкус розмарина
+    address: Пионерская ул., 34
+    price: 300-400
+  - name: Чайхана
+    address: Большая разночинная ул., 24
+    price: 150-300
   - name: Теремок
-    address: Чкаловский просп., 16
+    address: Чкаловский пр-т, 16
     price: 350-450
-  - name: КинZа
-    address: Чкаловский просп., 8
-    price: 400-1000
+  - name: И Рис
+    address: Ропшинская ул., 30
+    price: 1000-1500
+  - name: Shigt
+    address: Большая Зеленина ул., 24
+    price: 700-900
   - name: Бистро Шаверма
     address: Пионерская ул., 31
     price: 100-200
   - name: Коржов
     address: Большая Зеленина ул., 13
-    price: 200-300 
-  - name: И Рис
-    address: Ропшинская ул., 30
-    price: 1000-1500
-  - name: Вкус розмарина
-    address: Корпусная улица
-    price: 300-400
+    price: 200-300
+  - name: Буфет
+    address: Большая Зеленина ул., 19
+    price: 250-300
 

@@ -50,6 +50,8 @@ end
 
 config[:js_map] = 'constructor%3A917e42e7d2b4a3d6083877d4d9ad1d85d4e04e914e7adcad974a5a5dbc41cfa1'
 config[:js_map_hotels] = 'constructor%3Aa766547fdcfc674e1926669c73b65b162ceef9a2d0e802e28f750a1cf66593f7'
+config[:js_map_cafes] = 'constructor%3Aa4b977017d8c918cf7b02c4e5c15aa42e6dc9d84720aaabe7093c26dcd3126e5'
+
 config[:phone] = '+7 (921) 931-26-17'
 
 activate :deploy do |deploy|
