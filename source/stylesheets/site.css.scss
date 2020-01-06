@@ -38,6 +38,10 @@ a {
   padding-top: 70px;
 }
 
+.map-border {
+  border: 1px solid $second-base-color;
+}
+
 .phone {
   &__number {
     @include font-bold;

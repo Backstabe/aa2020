@@ -6,9 +6,9 @@ header.header
           img src='/images/logo.svg'
       nav.header__menu
         ul.header__list
-          li= link_to('Регистрация', '/registraciya/', class: 'header__link')
-          li= link_to('Кафе', '/kafe/', class: 'header__link')
-          li= link_to('Отели', '/hotels/', class: 'header__link')
+          li= main_nav_link 'Регистрация', '/registraciya/'
+          li= main_nav_link 'Кафе', '/kafe/'
+          li= main_nav_link 'Отели', '/hotels/'
       .header__phone
         .phone
           .phone__number= config[:phone]
