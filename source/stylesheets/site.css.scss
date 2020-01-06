@@ -44,8 +44,10 @@ body {
 }
 
 .intro {
-  background: url(/images/AA.jpg) no-repeat center right;
-  min-height: 640px;
+  min-height: 540px;
+  .container {
+    background: url(/images/AA.jpg) no-repeat center right;
+  }
   h1 {
     @include font-bold;
     font-size: 60px;
@@ -65,6 +67,7 @@ body {
     &:hover {
       color: $base-color;
       background: $second-base-color;
+      transition: all 0.5s;
     }
   }
 }
@@ -83,41 +86,6 @@ body {
 
 .section-second {
   @include main-padding;
-}
-
-.section-bg-second {
-  background-color: $second-bg-color;
-  background-size: cover;
-  @include main-padding;
-}
-
-.registration-title {
-  color: $base-color;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.registration-text {
-  color: $base-color;
-}
-
-.registration-btn-container {
-  display: flex;
-  align-items: center;
-}
-
-.registration-btn {
-  font-family: montserrat,sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
-  margin: 10px;
-  border: 3px solid $base-color;
-  color: $base-color;
-  text-decoration: none;
 }
 
 .price {
@@ -144,3 +112,42 @@ body {
   }
 }
 
+.site-sections {
+  &__row{
+    justify-content: space-between;
+  }
+  &__item {
+    flex: 0 0 49%;
+    padding-left: 30px;
+  }
+}
+
+.site-section {
+  @include font-bold;
+  height: 300px;
+  a {
+    text-decoration: none;
+    color: $second-base-color;
+  }
+  &__list {
+    @include icon;
+    margin-bottom: 10px;
+  }
+  &__map {
+    @include icon;
+    &:before {
+      background-image: url('/images/map-marker.svg');
+      height: 26px;
+    }
+  }
+  &_hotel {
+    border: 1px solid #e46000;
+    box-sizing: border-box;
+    background: url(/images/hotel.jpg) no-repeat center right;
+  }
+  &_kafe {
+    border: 1px solid #90309F;
+    box-sizing: border-box;
+    background: url(/images/kafe.jpg) no-repeat center right;
+	}
+}

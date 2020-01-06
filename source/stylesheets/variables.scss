@@ -29,3 +29,14 @@ $button-second-color: #0a98c0;
   font-family: 'Museo Sans Cyrl 700', sans-serif;
 }
 
+@mixin icon {
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('/images/list.svg');
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+}
