@@ -1,8 +1,13 @@
-section#footer.footer
+section#footer-wrapper.footer-wrapper
   .container
     .row
-      .col-full
-        .coordinator
-          strong
-            | Телефон координатора:
-            =< config[:phone] 
+      .col-full.footer
+        .footer__item
+          .footer__logo
+            img src='/images/logo.svg'
+        .footer__item.footer__item_bordered
+          .footer__copy Рабочий цех АА. 1–4 мая 2020, Санкт-Петербург
+        .footer__item.footer__item_bordered
+          .phone.float-right
+            .phone__number= config[:phone]
+
