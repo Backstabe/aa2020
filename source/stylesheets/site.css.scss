@@ -200,7 +200,8 @@ a {
   }
 }
 
-.hotels-wrapper {
+.hotels-wrapper,
+.cafes-wrapper {
   margin-top: 100px;
   h1 {
     margin: 0;
@@ -213,19 +214,37 @@ a {
   }
 }
 
-.hotel {
+.cafes-wrapper {
+  .container {
+    background: url(/images/kafe-page-bg.jpg) no-repeat bottom right;
+  }
+}
+
+.hotel,
+.cafe {
   box-sizing: border-box;
-  padding: 10px;
   &__name {
     @include font-bold;
     font-size: 32px;
   }
-  &__link {
+  &__link,
+  &__address,
+  &__price {
     @include icon;
     margin-top: 15px;
     &:before {
       background-image: url('/images/link.svg');
     }
   }
+  &__price {
+    &:before {
+      background-image: url('/images/rub.svg');
+    }
+  }
+  &__address {
+    &:before {
+      background-image: url('/images/map-marker.svg');
+      height: 26px;
+    }
+  }
 }
-

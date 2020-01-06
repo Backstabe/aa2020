@@ -1,13 +1,29 @@
 ---
-title: Кафе 
+title: Кафе
 ---
 
-section#cafe
+- count = 0
+- rows = [3, 3, 2, 2]
+- cafes = data.cafe.cafe
+
+section.cafes-wrapper
+  .container#list
+    - rows.each do |row|
+      .row
+        - if count.zero?
+          .col-quarter
+            h1 Кафе
+        - row.times do |i|
+          .col-quarter.cafe
+            .cafe__name= cafes[count].name
+            .cafe__address= cafes[count].address
+            .cafe__price= cafes[count].price
+          - count += 1
+
+section#map
   .container
     .row
       .col-full
-        - data.cafe.cafe.each do |c|
-            p = c.name
-            p = c.address
-            p = c.price
-            hr
+        = partial 'shared/map_script',
+          locals: { um: config[:js_map_cafes], height: 720 }
+
