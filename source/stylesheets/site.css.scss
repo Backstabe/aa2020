@@ -3,6 +3,7 @@
 @import 'grid.css';
 @import 'helpers.css';
 @import 'menu.css';
+@import 'video_popup.css';
 @import 'footer.css';
 
 body {
@@ -96,20 +97,46 @@ a {
     margin-bottom: 0px;
     margin-top: 115px;
   }
-
-  .btn-intro {
-    @include font-bold;
-    text-decoration: none;
-    border-radius: 50px;
-    color: $second-base-color;
-    border: 2px solid;
-    padding: 15px 40px;
-    display: inline-block;
-    margin-top: 40px;
-    &:hover {
-      color: $base-color;
-      background: $second-base-color;
-      transition: all 0.5s;
+  .intro-btns {
+    &__wrapper {
+      margin-top: 40px;
+      display: flex;
+    }
+    .btn {
+      border-radius: 50px;
+      color: $second-base-color;
+      border: 2px solid;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .btn-intro {
+      @include font-bold;
+      text-decoration: none;
+      padding: 16px 40px;
+      &:hover {
+        color: $base-color;
+        background: $second-base-color;
+        transition: all 0.5s;
+      }
+    }
+    .btn-video {
+      border-radius: 50%;
+    }
+    svg#play {
+      width:53px;
+      display:block;
+      cursor: pointer;
+      transform-origin: 50% 50%;
+      border-radius: 50%;
+    }
+    svg#play #triangle {
+      fill:rgba(22,22,22,0);
+      transition:500ms;
+      transform-origin: 50% 50%;
+    }
+    svg#play:hover #triangle {
+      fill:#25A5CE;
+      transform-origin: 50% 50%;
     }
   }
 }
@@ -252,3 +279,4 @@ a {
     }
   }
 }
+

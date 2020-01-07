@@ -12,10 +12,12 @@ html
   body
     = partial 'layouts/header/main_menu'
 
-    .main 
+    .main
       = yield
 
     = partial 'layouts/footer/footer'
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     = javascript_include_tag 'menu'
+    = javascript_include_tag 'video_popup'
+
