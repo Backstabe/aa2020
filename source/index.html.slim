@@ -22,9 +22,12 @@ section#intro.intro.section-second
               ul
                 li Большая Книга (12 шагов)
                 li Традиции в семье и в жизни
-        div
-          = link_to "Регистрация", "/registraciya/", class: "btn-intro"
+        .intro-btns.intro-btns__wrapper
+          = link_to 'Регистрация', '/registraciya/', class: 'btn btn-intro'
+          = link_to '#', class: 'btn btn-video js-video-popup' do
+            = partial 'shared/play_button'
 
 = partial 'shared/site_sections'
 = partial 'shared/place'
+= partial 'shared/video_popup'
 
