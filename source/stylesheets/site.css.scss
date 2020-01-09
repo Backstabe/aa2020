@@ -143,6 +143,34 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .intro {
+    .col-half {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 10px;
+      h1 {
+        font-size: 40px;
+        margin-top: 30px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .program {
+      margin-top: 265px;
+    }
+    .container {
+      background: url(/images/AA.jpg) no-repeat center 80px;
+      background-size: 440px;
+    }
+    .intro-btns__wrapper {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}
+
 .site-sections {
   &__row{
     justify-content: space-between;
@@ -178,6 +206,22 @@ a {
     background: url(/images/kafe.jpg) no-repeat center right;
 	}
 }
+@media (max-width: 767px) {
+  .site-sections {
+    &__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .site-section{
+    height: 230px;
+    &_kafe,
+    &_hotel {
+      background-size: 335px;
+    }
+  }
+}
 
 .place-wrapper {
   margin-top: 30px;
@@ -188,6 +232,24 @@ a {
   box-sizing: border-box;
   &__info {
     padding: 0 25px;
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .place-wrapper {
+    .col-quarter,
+    .col-three-quarters {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .container {
+      padding: 0;
+    }
+  }
+ .place {
+    border: 0;
   }
 }
 
