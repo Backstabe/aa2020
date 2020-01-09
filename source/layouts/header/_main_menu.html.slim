@@ -6,12 +6,13 @@ header.header
           img src='/images/logo.svg'
       nav.header__menu
         ul.header__list
+          li= main_nav_link 'Главная', '/'
           li= main_nav_link 'Регистрация', '/registraciya/'
           li= main_nav_link 'Кафе', '/kafe/'
           li= main_nav_link 'Отели', '/hotels/'
       .header__phone
         .phone
-          .phone__number= config[:phone]
+          .phone__number= link_to config[:phone], "tel:#{config[:phone]}"
           .phone__description Телефон координатора
       .header__burger
         span
