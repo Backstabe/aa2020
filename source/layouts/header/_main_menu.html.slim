@@ -12,7 +12,7 @@ header.header
           li= main_nav_link 'Отели', '/hotels/'
       .header__phone
         .phone
-          .phone__number= config[:phone]
+          .phone__number= link_to config[:phone], "tel:#{config[:phone]}"
           .phone__description Телефон координатора
       .header__burger
         span
