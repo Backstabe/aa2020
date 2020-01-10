@@ -347,3 +347,32 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .hotel,
+  .cafe {
+    flex: 0 0 100%;
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hotels-wrapper,
+  .cafes-wrapper {
+    margin-top: 50px;
+    .container {
+      background: url(/images/kafe-page-bg.jpg) no-repeat top right;
+      background-size: 270px;
+      h1 {
+        margin: 30px 0;
+      }
+      .row {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .hotels-wrapper {
+    .container {
+      background: url(/images/hotel-page-bg.jpg) no-repeat top right;
+      background-size: 270px;
+    }
+  }
+}
