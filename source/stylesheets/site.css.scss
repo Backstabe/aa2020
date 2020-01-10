@@ -259,6 +259,14 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .registration-wrapper {
+    .container {
+      background: none;
+    }
+  }
+}
+
 .registration {
   line-height: 22px;
   &__item {
@@ -267,6 +275,15 @@ a {
   &__title {
     min-width: 130px;
     @include font-bold;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration {
+    .col-half {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
   }
 }
 
@@ -292,6 +309,15 @@ a {
   }
   &__priod {
     @include font-light;
+  }
+}
+
+@media (max-width: 767px) {
+  .price {
+    &__item {
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
   }
 }
 
